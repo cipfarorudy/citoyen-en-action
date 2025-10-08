@@ -355,13 +355,17 @@ const HomePage: React.FC = () => {
                  className="bg-black hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
                 📱 TikTok @farorudy (Lives & Capsules)
               </a>
-              <a href="https://www.youtube.com/@citoyenenaction" 
+              <a href="https://www.youtube.com/@rudyfaro" 
+                 target="_blank"
+                 rel="noopener noreferrer"
                  className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition-colors">
-                📺 YouTube (Replays)
+                📺 Rudy FARO (Replays)
               </a>
-              <a href="https://www.instagram.com/citoyen.en.action" 
+              <a href="https://www.instagram.com/rudyfaro" 
+                 target="_blank"
+                 rel="noopener noreferrer"
                  className="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-lg transition-colors">
-                📸 Instagram (Stories & Reels)
+                📸 @rudyfaro (Stories & Reels)
               </a>
             </div>
           </div>

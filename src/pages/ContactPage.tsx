@@ -252,32 +252,40 @@ const ContactPage: React.FC = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
                   <a 
-                    href="#" 
+                    href="https://www.tiktok.com/@farorudy" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-black hover:text-gray-700 transition-colors p-2 rounded-lg hover:bg-gray-50"
                   >
-                    <span>�</span>
-                    <span>TikTok</span>
+                    <span>📱</span>
+                    <span>@farorudy</span>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://www.youtube.com/@rudyfaro" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-red-600 hover:text-red-800 transition-colors p-2 rounded-lg hover:bg-red-50"
                   >
-                    <span>�</span>
-                    <span>YouTube</span>
+                    <span>📺</span>
+                    <span>Rudy FARO</span>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://www.instagram.com/rudyfaro" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-pink-600 hover:text-pink-800 transition-colors p-2 rounded-lg hover:bg-pink-50"
                   >
-                    <span>�</span>
-                    <span>Instagram</span>
+                    <span>📷</span>
+                    <span>@rudyfaro</span>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/rudyfaro" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-blue-700 hover:text-blue-900 transition-colors p-2 rounded-lg hover:bg-blue-50"
                   >
-                    <span>�</span>
-                    <span>LinkedIn</span>
+                    <span>💼</span>
+                    <span>Rudy FARO</span>
                   </a>
                 </div>
               </CardContent>
