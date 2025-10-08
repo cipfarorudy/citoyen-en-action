@@ -57,9 +57,9 @@ const Footer: React.FC = () => {
               </a>
               {/* WhatsApp */}
               <a 
-                href="https://chat.whatsapp.com/votre-lien-groupe" 
+                href="https://wa.me/590690570846?text=Bonjour, je souhaite rejoindre le groupe Débat citoyen" 
                 className="text-gray-400 hover:text-white transition-colors"
-                aria-label="WhatsApp"
+                aria-label="Groupe WhatsApp Débat citoyen"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -85,19 +85,19 @@ const Footer: React.FC = () => {
 
           {/* Lives du Vendredi */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Lives du Vendredi</h3>
+            <h3 className="text-lg font-semibold mb-4">Débats Citoyens</h3>
             <div className="space-y-3">
               <p className="text-gray-300 text-sm">
-                Rejoignez-nous chaque vendredi à 20h pour nos débats citoyens en direct !
+                Rejoignez-nous chaque vendredi à 19h30 pour nos débats citoyens en direct !
               </p>
               <div className="flex flex-col space-y-2">
                 <a 
-                  href="https://chat.whatsapp.com/votre-lien-groupe" 
+                  href="https://wa.me/590690570846?text=Bonjour, je souhaite rejoindre le groupe Débat citoyen" 
                   className="text-accent-400 hover:text-accent-300 transition-colors text-sm flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  📱 Groupe WhatsApp
+                  📱 Groupe "Débat citoyen"
                 </a>
                 <a 
                   href="https://www.tiktok.com/@votre-compte" 
@@ -105,8 +105,11 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  🎥 Lives TikTok
+                  🎥 Lives TikTok (Vendredi 19h30)
                 </a>
+                <span className="text-gray-400 text-xs">
+                  📞 Contact : 0690 57 08 46
+                </span>
               </div>
             </div>
           </div>

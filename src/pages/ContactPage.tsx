@@ -214,40 +214,70 @@ const ContactPage: React.FC = () => {
               ))}
             </div>
 
+            {/* Groupe WhatsApp */}
+            <Card className="mt-6 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+              <CardContent>
+                <div className="flex items-center space-x-3 mb-4">
+                  <span className="text-2xl">📱</span>
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Groupe WhatsApp "Débat citoyen"
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-4 text-sm">
+                  Rejoignez notre groupe de discussion pour recevoir les notifications des lives, 
+                  échanger avec la communauté et prolonger les débats.
+                </p>
+                <div className="space-y-2">
+                  <a 
+                    href="https://wa.me/590690570846?text=Bonjour, je souhaite rejoindre le groupe Débat citoyen" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors"
+                  >
+                    <span>💬</span>
+                    <span>Rejoindre le groupe</span>
+                  </a>
+                  <p className="text-xs text-gray-500">
+                    📞 Ou contactez-nous directement : 0690 57 08 46
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Réseaux Sociaux */}
             <Card className="mt-6">
               <CardContent>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Suivez-nous sur les Réseaux
                 </h3>
-                <div className="flex space-x-4">
+                <div className="grid grid-cols-2 gap-3">
                   <a 
                     href="#" 
-                    className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
+                    className="flex items-center space-x-2 text-black hover:text-gray-700 transition-colors p-2 rounded-lg hover:bg-gray-50"
                   >
-                    <span>📘</span>
-                    <span>Facebook</span>
+                    <span>�</span>
+                    <span>TikTok</span>
                   </a>
                   <a 
                     href="#" 
-                    className="flex items-center space-x-2 text-blue-400 hover:text-blue-600 transition-colors"
+                    className="flex items-center space-x-2 text-red-600 hover:text-red-800 transition-colors p-2 rounded-lg hover:bg-red-50"
                   >
-                    <span>🐦</span>
-                    <span>Twitter</span>
+                    <span>�</span>
+                    <span>YouTube</span>
                   </a>
                   <a 
                     href="#" 
-                    className="flex items-center space-x-2 text-blue-700 hover:text-blue-900 transition-colors"
+                    className="flex items-center space-x-2 text-pink-600 hover:text-pink-800 transition-colors p-2 rounded-lg hover:bg-pink-50"
                   >
-                    <span>💼</span>
-                    <span>LinkedIn</span>
-                  </a>
-                  <a 
-                    href="#" 
-                    className="flex items-center space-x-2 text-pink-600 hover:text-pink-800 transition-colors"
-                  >
-                    <span>📷</span>
+                    <span>�</span>
                     <span>Instagram</span>
+                  </a>
+                  <a 
+                    href="#" 
+                    className="flex items-center space-x-2 text-blue-700 hover:text-blue-900 transition-colors p-2 rounded-lg hover:bg-blue-50"
+                  >
+                    <span>�</span>
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </CardContent>

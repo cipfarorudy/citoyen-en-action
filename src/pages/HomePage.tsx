@@ -188,22 +188,25 @@ const HomePage: React.FC = () => {
               <div className="flex items-center mb-4">
                 <span className="text-4xl mr-4">📱</span>
                 <div>
-                  <h3 className="text-xl font-bold">Groupe WhatsApp</h3>
+                  <h3 className="text-xl font-bold">Groupe "Débat citoyen"</h3>
                   <p className="opacity-90">Discussions et notifications</p>
                 </div>
               </div>
               <p className="text-sm mb-4 opacity-80">
-                Rejoignez notre communauté pour recevoir les notifications des lives 
+                Rejoignez notre groupe WhatsApp "Débat citoyen" pour recevoir les notifications des lives 
                 et poursuivre les débats entre les sessions.
               </p>
               <a 
-                href="https://chat.whatsapp.com/votre-lien-groupe" 
+                href="https://wa.me/590690570846?text=Bonjour, je souhaite rejoindre le groupe Débat citoyen" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
               >
-                Rejoindre le groupe
+                📱 Rejoindre via WhatsApp
               </a>
+              <p className="text-xs mt-2 opacity-70">
+                📞 Contact : 0690 57 08 46
+              </p>
             </div>
 
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6">
