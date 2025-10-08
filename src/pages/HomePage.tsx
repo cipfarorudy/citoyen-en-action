@@ -222,12 +222,12 @@ const HomePage: React.FC = () => {
                 exprimez votre opinion sur les sujets citoyens du moment.
               </p>
               <a 
-                href="https://www.tiktok.com/@votre-compte" 
+                href="https://www.tiktok.com/@farorudy" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-black hover:bg-gray-800 rounded-lg transition-colors"
               >
-                Suivre sur TikTok
+                📱 Suivre @farorudy
               </a>
             </div>
           </div>
@@ -298,9 +298,15 @@ const HomePage: React.FC = () => {
                   Rejoignez notre serveur Discord pour prolonger les débats, 
                   poser vos questions et échanger avec d'autres citoyens engagés.
                 </p>
-                <Button className="bg-indigo-600 hover:bg-indigo-700">
-                  Rejoindre Discord
-                </Button>
+                <a 
+                  href="https://discord.gg/citoyen-en-action" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-indigo-600 hover:bg-indigo-700">
+                    💬 Rejoindre Discord
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -343,9 +349,11 @@ const HomePage: React.FC = () => {
               Retrouvez nos contenus sur toutes les plateformes pour ne rien manquer !
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://www.tiktok.com/@votre-compte" 
+              <a href="https://www.tiktok.com/@farorudy" 
+                 target="_blank"
+                 rel="noopener noreferrer"
                  className="bg-black hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
-                📱 TikTok (Lives & Capsules)
+                📱 TikTok @farorudy (Lives & Capsules)
               </a>
               <a href="https://www.youtube.com/@citoyenenaction" 
                  className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition-colors">
