@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
 
@@ -237,56 +238,62 @@ const CapsulesVideosPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="hover:scale-105 transition-transform">
-              <CardContent>
-                <div className="text-center">
-                  <div className="text-5xl mb-4">🗳️</div>
-                  <h3 className="text-lg font-bold mb-3 text-gray-900">
-                    Le vote à 16 ans
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4">
-                    Pour ou contre ? Analyse des arguments et enjeux pour la jeunesse guadeloupéenne.
-                  </p>
-                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
-                    En préparation
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/capsules-video/vote-16-ans" className="block">
+              <Card className="hover:scale-105 transition-transform cursor-pointer">
+                <CardContent>
+                  <div className="text-center">
+                    <div className="text-5xl mb-4">🗳️</div>
+                    <h3 className="text-lg font-bold mb-3 text-gray-900">
+                      Le vote à 16 ans
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Pour ou contre ? Analyse des arguments et enjeux pour la jeunesse guadeloupéenne.
+                    </p>
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                      Disponible
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="hover:scale-105 transition-transform">
-              <CardContent>
-                <div className="text-center">
-                  <div className="text-5xl mb-4">🌊</div>
-                  <h3 className="text-lg font-bold mb-3 text-gray-900">
-                    Écologie politique
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4">
-                    Comment l'environnement devient une question politique majeure en Guadeloupe.
-                  </p>
-                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
-                    En préparation
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/capsules-video/ecologie-politique" className="block">
+              <Card className="hover:scale-105 transition-transform cursor-pointer">
+                <CardContent>
+                  <div className="text-center">
+                    <div className="text-5xl mb-4">🌊</div>
+                    <h3 className="text-lg font-bold mb-3 text-gray-900">
+                      Écologie politique
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Comment l'environnement devient une question politique majeure en Guadeloupe.
+                    </p>
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                      Disponible
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="hover:scale-105 transition-transform">
-              <CardContent>
-                <div className="text-center">
-                  <div className="text-5xl mb-4">⚖️</div>
-                  <h3 className="text-lg font-bold mb-3 text-gray-900">
-                    Liberté d'expression
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4">
-                    Où sont les limites ? Analyse des droits et responsabilités sur les réseaux sociaux.
-                  </p>
-                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
-                    En préparation
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+            <Link to="/capsules-video/liberte-expression" className="block">
+              <Card className="hover:scale-105 transition-transform cursor-pointer">
+                <CardContent>
+                  <div className="text-center">
+                    <div className="text-5xl mb-4">⚖️</div>
+                    <h3 className="text-lg font-bold mb-3 text-gray-900">
+                      Liberté d'expression
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Où sont les limites ? Analyse des droits et responsabilités sur les réseaux sociaux.
+                    </p>
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                      Disponible
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

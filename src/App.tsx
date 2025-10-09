@@ -11,6 +11,9 @@ import CreateursPage from './pages/CreateursPage';
 import AnnuaireAssociationsPage from './pages/AnnuaireAssociationsPage';
 import CitoyenneteGuadeloupePage from './pages/CitoyenneteGuadeloupePage';
 import CapsulesVideosPage from './pages/CapsulesVideosPage';
+import Vote16AnsPage from './pages/Vote16AnsPage';
+import EcologiePolitiquePage from './pages/EcologiePolitiquePage';
+import LiberteExpressionPage from './pages/LiberteExpressionPage';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +26,9 @@ const App: React.FC = () => {
           <Route path="/debats" element={<DebatsPage />} />
           <Route path="/ressources" element={<RessourcesPage />} />
           <Route path="/capsules-video" element={<CapsulesVideosPage />} />
+          <Route path="/capsules-video/vote-16-ans" element={<Vote16AnsPage />} />
+          <Route path="/capsules-video/ecologie-politique" element={<EcologiePolitiquePage />} />
+          <Route path="/capsules-video/liberte-expression" element={<LiberteExpressionPage />} />
           <Route path="/ressources/annuaire-associations-guadeloupe" element={<AnnuaireAssociationsPage />} />
           <Route path="/createurs" element={<CreateursPage />} />
           <Route path="/contact" element={<ContactPage />} />
