@@ -121,25 +121,27 @@ const RessourcesPage: React.FC = () => {
       sources: ['Haut Conseil à l\'égalité', 'INSEE', 'Assemblée nationale']
     },
     {
-      id: 6,
-      titre: "Qu'est-ce que l'écologie politique ?",
-      category: 'civisme',
+      id: 7,
+      titre: "C'est quoi être citoyen en Guadeloupe ?",
+      category: 'guadeloupe',
       niveau: 'Débutant',
-      duree: '3 min',
-      description: 'Comprendre l\'intersection entre environnement et politique',
+      duree: '2 min',
+      description: 'Comprendre ce que signifie vraiment la citoyenneté dans le contexte guadeloupéen',
       points: [
-        'Développement durable et décisions publiques',
-        'Justice sociale et environnementale',
-        'Enjeux spécifiques aux îles (Guadeloupe)',
-        'Participation citoyenne écologique'
+        'Porter l\'histoire de nos ancêtres (esclaves, marrons, travailleurs immigrés)',
+        'Agir pour une société plus juste aujourd\'hui',
+        'Parler créole sans complexe',
+        'Voter en conscience et protéger l\'environnement',
+        'Exiger l\'égalité et débattre des enjeux locaux'
       ],
       exemples: [
-        '🌊 Montée des eaux et politique littorale',
-        '♻️ Gestion des déchets et gouvernance',
-        '🏭 Transition énergétique et emploi'
+        '🇬� Citoyenneté = fierté + mémoire + engagement',
+        '🗳️ Voter en conscience pour l\'autonomie',
+        '� Protéger nos mangroves et nos mers',
+        '💬 Débattre sur TikTok, Facebook et dans la rue'
       ],
-      debat: 'L\'urgence écologique justifie-t-elle de limiter certaines libertés ?',
-      sources: ['GIEC', 'Ministère Transition écologique', 'ADEME Guadeloupe']
+      debat: 'Comment vis-tu ta citoyenneté guadeloupéenne ?',
+      sources: ['Histoire de la Guadeloupe', 'Mouvement Citoyen en Action', 'Constitution française']
     }
   ];
 
@@ -256,6 +258,129 @@ const RessourcesPage: React.FC = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Section Capsules Réseaux Sociaux */}
+      <section className="py-16 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              🎥 Capsules pour Réseaux Sociaux
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Contenus courts et percutants pour TikTok, Facebook et Instagram. 
+              Partagez ces capsules pour sensibiliser votre communauté !
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="hover:scale-105 transition-transform">
+              <CardContent className="p-8">
+                {/* Header */}
+                <div className="text-center mb-6">
+                  <div className="text-6xl mb-4">🇬🇵</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    C'est quoi être citoyen en Guadeloupe ?
+                  </h3>
+                  <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">TikTok / Facebook</span>
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">⏱️ 45 secondes</span>
+                  </div>
+                </div>
+
+                {/* Contenu de la capsule */}
+                <div className="bg-white rounded-lg p-6 mb-6 shadow-inner">
+                  <div className="text-center mb-4">
+                    <span className="text-2xl">🎵</span>
+                    <p className="text-sm text-gray-600 italic">Musique douce en fond – zouk ou gwoka moderne</p>
+                  </div>
+
+                  <div className="space-y-4 text-center">
+                    <p className="text-lg font-medium text-gray-800">
+                      Être citoyen en Guadeloupe,<br/>
+                      ce n'est pas juste avoir un passeport français.
+                    </p>
+
+                    <div className="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg">
+                      <p className="text-gray-700">
+                        C'est <strong>porter en soi</strong> l'histoire de nos ancêtres — esclaves, marrons, travailleurs immigrés —<br/>
+                        et <strong>agir aujourd'hui</strong> pour une société plus juste.
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      <div className="bg-yellow-50 p-3 rounded">
+                        🗣️ <strong>Parler créole</strong> sans complexe
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded">
+                        🗳️ <strong>Voter</strong> en conscience
+                      </div>
+                      <div className="bg-green-50 p-3 rounded">
+                        🌿 <strong>Protéger</strong> nos mangroves et nos mers
+                      </div>
+                      <div className="bg-purple-50 p-3 rounded">
+                        ✊ <strong>Exiger</strong> l'égalité, ici comme ailleurs
+                      </div>
+                    </div>
+
+                    <p className="text-gray-700">
+                      C'est aussi <strong>débattre</strong> — dans la rue, en classe…<br/>
+                      ou sur <strong>TikTok</strong> et <strong>Facebook</strong> ! 📱
+                    </p>
+
+                    <div className="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg">
+                      <p className="text-lg font-semibold text-gray-800">
+                        Parce que la citoyenneté, en Guadeloupe,<br/>
+                        se vit avec <strong>fierté</strong>, <strong>mémoire</strong>… et <strong>engagement</strong>.
+                      </p>
+                    </div>
+
+                    <div className="border-t pt-4">
+                      <p className="text-xl font-bold text-gray-900 mb-2">
+                        ✊ Et toi, comment tu vis ta citoyenneté ?
+                      </p>
+                      <p className="text-gray-600">👇 Partage ton point de vue en commentaire !</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Hashtags */}
+                <div className="bg-gray-100 p-4 rounded-lg mb-6">
+                  <h4 className="font-semibold text-gray-900 mb-2">📍 Hashtags suggérés :</h4>
+                  <p className="text-sm text-gray-700">
+                    #CitoyennetéEnGuadeloupe #QuiSuisJeCitoyen #Guadeloupe #MémoireEtAvenir #EngagementLocal
+                  </p>
+                </div>
+
+                {/* Actions */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button
+                    onClick={() => navigator.clipboard.writeText(`Être citoyen en Guadeloupe, ce n'est pas juste avoir un passeport français. C'est porter en soi l'histoire de nos ancêtres — esclaves, marrons, travailleurs immigrés — et agir aujourd'hui pour une société plus juste. C'est parler créole sans complexe, voter en conscience, protéger nos mangroves et nos mers, et exiger l'égalité, ici comme ailleurs. C'est aussi débattre — dans la rue, en classe… ou sur TikTok et Facebook ! Parce que la citoyenneté, en Guadeloupe, se vit avec fierté, mémoire… et engagement. ✊ Et toi, comment tu vis ta citoyenneté ? 👇 Partage ton point de vue en commentaire ! #CitoyennetéEnGuadeloupe #QuiSuisJeCitoyen #Guadeloupe #MémoireEtAvenir #EngagementLocal`)}
+                    className="btn-primary bg-blue-600 hover:bg-blue-700"
+                  >
+                    📋 Copier le texte
+                  </button>
+                  <a
+                    href="https://www.tiktok.com/@farorudy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary bg-black hover:bg-gray-800"
+                  >
+                    🎵 Voir sur TikTok
+                  </a>
+                  <a
+                    href="https://www.facebook.com/farorudy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary bg-blue-700 hover:bg-blue-800"
+                  >
+                    📘 Partager sur Facebook
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
