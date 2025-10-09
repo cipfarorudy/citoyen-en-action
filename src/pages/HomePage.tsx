@@ -80,19 +80,31 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Section Statistiques */}
-      <section className="bg-gray-50 py-16">
+      {/* Section Statistiques - AMÉLIORÉE */}
+      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Notre Impact en Chiffres - Guadeloupe</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">Notre Impact en Chiffres</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">L'engagement citoyen porte ses fruits en Guadeloupe</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">{stat.number}</div>
-                <div className="text-lg text-gray-600">{stat.label}</div>
+              <div key={index} className="text-center group hover:scale-110 transition-all duration-300">
+                <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
+                  <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
+                    {stat.number}
+                  </div>
+                  <div className="text-lg text-gray-600 font-medium">{stat.label}</div>
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-primary-600 to-accent-600 rounded-2xl p-8 text-white inline-block hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold mb-2">📈 En constante évolution</h3>
+              <p className="opacity-90">Chaque jour, de nouveaux citoyens rejoignent le mouvement</p>
+            </div>
           </div>
         </div>
       </section>
@@ -140,7 +152,70 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Section Lives du Vendredi */}
+      {/* Section Capsules Vidéo - NOUVELLE */}
+      <section className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-20">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">🎥 Capsules Vidéo Éducatives</h2>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+              Découvrez nos vidéos courtes et percutantes sur la citoyenneté guadeloupéenne !
+              Parfaites pour comprendre et partager sur les réseaux sociaux.
+            </p>
+            <Link to="/capsules-video">
+              <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 hover:scale-105 transition-all">
+                🎬 Voir toutes les capsules
+              </Button>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Link to="/capsules-video" className="block">
+              <Card className="bg-white bg-opacity-10 backdrop-blur-sm border-white border-opacity-20 hover:scale-105 transition-all cursor-pointer">
+                <CardContent className="text-center p-6">
+                  <div className="text-6xl mb-4">🗳️</div>
+                  <h3 className="text-xl font-bold mb-3">Le vote à 16 ans</h3>
+                  <p className="opacity-90 mb-4">Pour ou contre ? Analyse des arguments et enjeux pour la jeunesse guadeloupéenne.</p>
+                  <span className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-sm">Disponible</span>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/capsules-video" className="block">
+              <Card className="bg-white bg-opacity-10 backdrop-blur-sm border-white border-opacity-20 hover:scale-105 transition-all cursor-pointer">
+                <CardContent className="text-center p-6">
+                  <div className="text-6xl mb-4">🌊</div>
+                  <h3 className="text-xl font-bold mb-3">Écologie politique</h3>
+                  <p className="opacity-90 mb-4">Comment l'environnement devient une question politique majeure en Guadeloupe.</p>
+                  <span className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-sm">Disponible</span>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/capsules-video" className="block">
+              <Card className="bg-white bg-opacity-10 backdrop-blur-sm border-white border-opacity-20 hover:scale-105 transition-all cursor-pointer">
+                <CardContent className="text-center p-6">
+                  <div className="text-6xl mb-4">⚖️</div>
+                  <h3 className="text-xl font-bold mb-3">Liberté d'expression</h3>
+                  <p className="opacity-90 mb-4">Où sont les limites ? Analyse des droits et responsabilités sur les réseaux sociaux.</p>
+                  <span className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-sm">Disponible</span>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 inline-block">
+              <h3 className="text-lg font-bold mb-2">📱 Partagez nos capsules !</h3>
+              <p className="opacity-90">Aidez-nous à sensibiliser plus de citoyens guadeloupéens</p>
+              <div className="flex flex-wrap justify-center gap-3 mt-4">
+                <a href="https://www.tiktok.com/@farorudy" target="_blank" rel="noopener noreferrer" className="bg-black hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors text-sm">📱 TikTok</a>
+                <a href="https://www.facebook.com/farorudy" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded-lg transition-colors text-sm">📘 Facebook</a>
+                <a href="https://wa.me/590690570846" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors text-sm">💬 WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">
         <div className="container">
           <div className="text-center mb-8">
@@ -231,14 +306,75 @@ function HomePage() {
       </section>
 
       {/* Section CTA */}
-      <section className="bg-primary-600 text-white py-16">
+      <section className="bg-gradient-to-r from-primary-600 via-accent-600 to-purple-600 text-white py-20">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à Passer à l'Action ?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Rejoignez des milliers de citoyens qui agissent déjà pour un monde meilleur. Ensemble, nous pouvons faire la différence pour notre pays.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact"><Button size="lg" variant="outline" className="bg-white text-primary-600 hover:bg-gray-100">Nous contacter</Button></Link>
-            <Link to="/actions"><Button size="lg" className="bg-accent-600 hover:bg-accent-700">Voir nos actions</Button></Link>
-            <Link to="/ressources"><Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary-600">Ressources pédagogiques</Button></Link>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">🚀 Prêt à Passer à l'Action ?</h2>
+          <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+            Rejoignez des milliers de citoyens qui agissent déjà pour un monde meilleur.
+            Ensemble, nous pouvons faire la différence pour notre Guadeloupe !
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-6xl mx-auto">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 hover:scale-105 transition-all">
+              <div className="text-4xl mb-3">🎥</div>
+              <h3 className="text-lg font-bold mb-2">Regarder</h3>
+              <p className="text-sm opacity-90 mb-4">Découvrez nos capsules vidéo éducatives</p>
+              <Link to="/capsules-video">
+                <Button size="sm" className="bg-white text-primary-600 hover:bg-gray-100 w-full">
+                  Capsules Vidéo
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 hover:scale-105 transition-all">
+              <div className="text-4xl mb-3">💬</div>
+              <h3 className="text-lg font-bold mb-2">Discuter</h3>
+              <p className="text-sm opacity-90 mb-4">Participez aux débats citoyens</p>
+              <Link to="/debats">
+                <Button size="sm" className="bg-white text-primary-600 hover:bg-gray-100 w-full">
+                  Débats TikTok
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 hover:scale-105 transition-all">
+              <div className="text-4xl mb-3">📚</div>
+              <h3 className="text-lg font-bold mb-2">Apprendre</h3>
+              <p className="text-sm opacity-90 mb-4">Consultez nos ressources pédagogiques</p>
+              <Link to="/ressources">
+                <Button size="sm" className="bg-white text-primary-600 hover:bg-gray-100 w-full">
+                  Ressources
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 hover:scale-105 transition-all">
+              <div className="text-4xl mb-3">🤝</div>
+              <h3 className="text-lg font-bold mb-2">Agir</h3>
+              <p className="text-sm opacity-90 mb-4">Rejoignez nos actions concrètes</p>
+              <Link to="/actions">
+                <Button size="sm" className="bg-white text-primary-600 hover:bg-gray-100 w-full">
+                  Actions Citoyennes
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 inline-block">
+            <h3 className="text-2xl font-bold mb-4">🌺 Ensemble pour la Guadeloupe</h3>
+            <p className="mb-6 opacity-90">Notre mouvement citoyen grandit grâce à vous !</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://wa.me/590690570846?text=Bonjour, je souhaite m'engager avec Citoyen en Action" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all">
+                  📱 Nous rejoindre via WhatsApp
+                </Button>
+              </a>
+              <Link to="/contact">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-600 hover:scale-105 transition-all">
+                  ✉️ Nous contacter
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
