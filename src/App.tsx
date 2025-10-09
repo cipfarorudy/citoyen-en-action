@@ -10,6 +10,7 @@ import RessourcesPage from './pages/RessourcesPage';
 import CreateursPage from './pages/CreateursPage';
 import AnnuaireAssociationsPage from './pages/AnnuaireAssociationsPage';
 import CitoyenneteGuadeloupePage from './pages/CitoyenneteGuadeloupePage';
+import CapsulesVideosPage from './pages/CapsulesVideosPage';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <Route path="/actions" element={<ActionsPage />} />
           <Route path="/debats" element={<DebatsPage />} />
           <Route path="/ressources" element={<RessourcesPage />} />
+          <Route path="/capsules-video" element={<CapsulesVideosPage />} />
           <Route path="/ressources/annuaire-associations-guadeloupe" element={<AnnuaireAssociationsPage />} />
           <Route path="/createurs" element={<CreateursPage />} />
           <Route path="/contact" element={<ContactPage />} />

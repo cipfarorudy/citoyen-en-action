@@ -10,6 +10,7 @@ const Header: React.FC = () => {
     { name: 'À propos', href: '/a-propos' },
     { name: 'Actions citoyennes', href: '/actions' },
     { name: 'Débats TikTok', href: '/debats' },
+    { name: 'Capsules Vidéo', href: '/capsules-video' },
     { name: 'Ressources', href: '/ressources' },
     { name: 'Créateurs', href: '/createurs' },
     { name: 'Contact', href: '/contact' },
