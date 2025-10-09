@@ -14,6 +14,7 @@ import CapsulesVideosPage from './pages/CapsulesVideosPage';
 import Vote16AnsPage from './pages/Vote16AnsPage';
 import EcologiePolitiquePage from './pages/EcologiePolitiquePage';
 import LiberteExpressionPage from './pages/LiberteExpressionPage';
+import MediaAdminPage from './pages/MediaAdminPage';
 
 const App: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/capsules-video/vote-16-ans" element={<Vote16AnsPage />} />
           <Route path="/capsules-video/ecologie-politique" element={<EcologiePolitiquePage />} />
           <Route path="/capsules-video/liberte-expression" element={<LiberteExpressionPage />} />
+          <Route path="/admin/medias" element={<MediaAdminPage />} />
           <Route path="/ressources/annuaire-associations-guadeloupe" element={<AnnuaireAssociationsPage />} />
           <Route path="/createurs" element={<CreateursPage />} />
           <Route path="/contact" element={<ContactPage />} />

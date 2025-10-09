@@ -1,6 +1,7 @@
 import React from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import VideoEmbed from '../components/ui/VideoEmbed';
 
 const Vote16AnsPage: React.FC = () => {
   return (
@@ -185,6 +186,32 @@ const Vote16AnsPage: React.FC = () => {
                     <p className="text-gray-600">👇 Vote en commentaire et argumente !</p>
                   </div>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Section Ajouter une vidéo */}
+          <Card className="mb-8">
+            <CardContent>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">🎬 Ajoutez votre vidéo sur le sujet</h3>
+              <p className="text-gray-600 mb-6">
+                Vous avez créé une vidéo sur le vote à 16 ans ? Partagez-la ici pour enrichir le débat !
+                Nous acceptons les liens YouTube, Vimeo et Dailymotion.
+              </p>
+
+              <VideoEmbed
+                label="URL de votre vidéo"
+                placeholder="Collez le lien de votre vidéo (YouTube, Vimeo, Dailymotion)"
+              />
+
+              <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+                <h4 className="font-semibold text-blue-800 mb-2">💡 Conseils pour votre vidéo :</h4>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• Présentez clairement votre position (pour ou contre)</li>
+                  <li>• Argumentez avec des faits concrets</li>
+                  <li>• Restez respectueux envers les opinions opposées</li>
+                  <li>• Utilisez les hashtags #VoteA16Ans #CitoyenEnAction</li>
+                </ul>
               </div>
             </CardContent>
           </Card>

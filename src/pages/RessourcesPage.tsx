@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
+import MediaGallery from '../components/ui/MediaGallery';
 
 const RessourcesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('tous');
@@ -148,6 +149,46 @@ const RessourcesPage: React.FC = () => {
   const filteredFiches = selectedCategory === 'tous' 
     ? fiches 
     : fiches.filter(fiche => fiche.category === selectedCategory);
+
+  // Données d'exemple pour la galerie média
+  const mediaItems = [
+    {
+      id: '1',
+      type: 'image' as const,
+      title: 'Manifestation pour l\'environnement en Guadeloupe',
+      description: 'Citoyens mobilisés pour la protection des mangroves et des espaces naturels en Guadeloupe.',
+      url: '/assets/manifestation-environnement.jpg', // Placeholder - à remplacer par une vraie image
+      createdAt: new Date('2025-01-15'),
+      tags: ['environnement', 'manifestation', 'citoyenneté']
+    },
+    {
+      id: '2',
+      type: 'video' as const,
+      title: 'Débat citoyen sur le vote à 16 ans',
+      description: 'Discussion animée entre jeunes et élus sur l\'abaissement de l\'âge du vote.',
+      url: 'https://www.youtube.com/watch?v=example1', // URL YouTube d'exemple
+      createdAt: new Date('2025-01-10'),
+      tags: ['débat', 'vote', 'jeunesse']
+    },
+    {
+      id: '3',
+      type: 'image' as const,
+      title: 'Atelier d\'éducation civique',
+      description: 'Session de formation sur les droits et devoirs du citoyen organisée par l\'association.',
+      url: '/assets/atelier-civique.jpg', // Placeholder
+      createdAt: new Date('2025-01-08'),
+      tags: ['éducation', 'citoyenneté', 'formation']
+    },
+    {
+      id: '4',
+      type: 'video' as const,
+      title: 'Interview d\'un élu local',
+      description: 'Échange avec un conseiller territorial sur les enjeux de développement durable.',
+      url: 'https://www.youtube.com/watch?v=example2', // URL YouTube d'exemple
+      createdAt: new Date('2025-01-05'),
+      tags: ['interview', 'politique', 'développement']
+    }
+  ];
 
   return (
     <div className="space-y-16">
@@ -523,6 +564,30 @@ const RessourcesPage: React.FC = () => {
                 💬 Rejoindre le groupe d'entraide
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Galerie Média */}
+      <section className="py-16 bg-gradient-to-r from-green-50 to-blue-50">
+        <div className="container">
+          <MediaGallery
+            mediaItems={mediaItems}
+            title="🖼️ Galerie Média Citoyenne"
+            showFilters={true}
+            className="max-w-6xl mx-auto"
+          />
+
+          <div className="text-center mt-8">
+            <p className="text-gray-600 mb-4">
+              Cette galerie présente des photos et vidéos de nos actions citoyennes en Guadeloupe.
+            </p>
+            <a
+              href="/admin/medias"
+              className="btn-primary bg-purple-600 hover:bg-purple-700"
+            >
+              🎨 Gérer les médias
+            </a>
           </div>
         </div>
       </section>
