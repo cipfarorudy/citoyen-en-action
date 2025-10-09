@@ -9,6 +9,7 @@ import DebatsPage from './pages/DebatsPage';
 import RessourcesPage from './pages/RessourcesPage';
 import CreateursPage from './pages/CreateursPage';
 import AnnuaireAssociationsPage from './pages/AnnuaireAssociationsPage';
+import CitoyenneteGuadeloupePage from './pages/CitoyenneteGuadeloupePage';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Route path="/ressources/annuaire-associations-guadeloupe" element={<AnnuaireAssociationsPage />} />
           <Route path="/createurs" element={<CreateursPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/citoyennete-guadeloupe" element={<CitoyenneteGuadeloupePage />} />
           {/* Pages légales (à créer plus tard) */}
           <Route path="/mentions-legales" element={<div className="container py-16"><h1 className="text-3xl font-bold">Mentions Légales</h1><p className="mt-4">Contenu à venir...</p></div>} />
           <Route path="/politique-confidentialite" element={<div className="container py-16"><h1 className="text-3xl font-bold">Politique de Confidentialité</h1><p className="mt-4">Contenu à venir...</p></div>} />
