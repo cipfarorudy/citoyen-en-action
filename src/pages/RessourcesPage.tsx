@@ -275,6 +275,28 @@ const RessourcesPage: React.FC = () => {
             <Card className="hover:scale-105 transition-transform">
               <CardContent>
                 <div className="text-center">
+                  <div className="text-4xl mb-4">📖</div>
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">
+                    Livret du Citoyen
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Guide officiel du gouvernement de Guadeloupe pour comprendre vos droits et devoirs de citoyen.
+                  </p>
+                  <a
+                    href="https://www.guadeloupe.gouv.fr/contenu/telechargement/7719/57332/file/Livret%20du%20citoyen.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary text-sm"
+                  >
+                    📄 Consulter le livret
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:scale-105 transition-transform">
+              <CardContent>
+                <div className="text-center">
                   <div className="text-4xl mb-4">♻️</div>
                   <h3 className="text-lg font-bold mb-3 text-gray-900">
                     Guide du Tri en Guadeloupe
@@ -282,7 +304,7 @@ const RessourcesPage: React.FC = () => {
                   <p className="text-sm text-gray-600 mb-4">
                     Mode d'emploi complet pour bien trier ses déchets selon les spécificités locales.
                   </p>
-                  <a 
+                  <a
                     href="/ressources/guide-tri-guadeloupe.pdf"
                     className="btn-primary text-sm"
                     download
