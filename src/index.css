@@ -1,5 +1,10 @@
-/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+/* Import Google Fonts */
+/* Couleur principale du logo React */
+:root {
+  --accent-logo: #00d8ff;
+}
 
 /* CSS Reset and Base Styles */
 * {
@@ -54,13 +59,16 @@ body {
 }
 
 .btn-primary {
-  background-color: #2563eb;
-  color: white;
+  background-color: var(--accent-logo);
+  color: #fff;
   padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 216, 255, 0.12);
+  border: none;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: #00b6e6;
+  box-shadow: 0 4px 16px rgba(0, 216, 255, 0.18);
 }
 
 .btn-secondary {
@@ -75,9 +83,44 @@ body {
 
 .btn-outline {
   background-color: transparent;
-  color: #2563eb;
-  border: 2px solid #2563eb;
+  color: var(--accent-logo);
+  border: 2px solid var(--accent-logo);
   padding: 0.5rem 1rem;
+  transition: box-shadow 0.2s;
+}
+.btn-outline:hover {
+  background-color: var(--accent-logo);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 216, 255, 0.12);
+}
+/* Accent sur les liens et titres */
+a,
+.accent {
+  color: var(--accent-logo);
+  transition: color 0.2s;
+}
+a:hover,
+.accent:hover {
+  color: #00b6e6;
+}
+/* Effet glassmorphism pour la bannière */
+.banner {
+  background: rgba(0, 216, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(0, 216, 255, 0.12);
+  padding: 2rem 0;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headline-shadow {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-logo);
+  text-shadow: 0 2px 8px rgba(0, 216, 255, 0.18);
 }
 
 .btn-outline:hover {
@@ -559,6 +602,100 @@ body {
 
 .z-50 {
   z-index: 50;
+}
+
+/* Animations modernes */
+.fade-in {
+  animation: fadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Effet glass sur les boutons */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 41, 55, 0.25);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #2563eb;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.btn-glass:hover {
+  background: rgba(37, 99, 235, 0.15);
+  color: #1e3a8a;
+  box-shadow: 0 12px 24px 0 rgba(37, 99, 235, 0.18);
+}
+
+/* Effet de survol sur les cartes */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15), 0 2px 8px rgba(0, 0, 0, 0.07);
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Effet text-shadow sur titres */
+.headline-shadow {
+  text-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+  letter-spacing: 0.5px;
+}
+
+/* Bannière moderne */
+.banner {
+  width: 100%;
+  min-height: 180px;
+  background: linear-gradient(90deg, #2563eb 0%, #22c55e 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.12);
+  position: relative;
+  z-index: 10;
+}
+.banner-content {
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+.banner-icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.banner .headline-shadow {
+  text-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
 }
 
 /* Responsive helpers */
