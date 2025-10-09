@@ -110,7 +110,7 @@ const CapsulesVideosPage: React.FC = () => {
           </div>
 
           {/* Script de la capsule */}
-          <Card className="mb-8">
+          <Card className="mb-8 hidden">
             <CardContent>
               <h3 className="text-xl font-bold mb-4 text-gray-900">📝 Script de la capsule</h3>
               <div className="bg-gray-50 p-6 rounded-lg">
