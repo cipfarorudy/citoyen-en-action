@@ -1,25 +1,27 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ActionsPage from './pages/ActionsPage';
-import ContactPage from './pages/ContactPage';
-import DebatsPage from './pages/DebatsPage';
-import RessourcesPage from './pages/RessourcesPage';
-import CreateursPage from './pages/CreateursPage';
-import AnnuaireAssociationsPage from './pages/AnnuaireAssociationsPage';
-import CitoyenneteGuadeloupePage from './pages/CitoyenneteGuadeloupePage';
-import CapsulesVideosPage from './pages/CapsulesVideosPage';
-import Vote16AnsPage from './pages/Vote16AnsPage';
-import EcologiePolitiquePage from './pages/EcologiePolitiquePage';
-import LiberteExpressionPage from './pages/LiberteExpressionPage';
-import MediaAdminPage from './pages/MediaAdminPage';
+// Lazy loading des pages pour améliorer le temps de chargement initial
+const HomePage = React.lazy(() => import('./pages/HomePage'));
+const AboutPage = React.lazy(() => import('./pages/AboutPage'));
+const ActionsPage = React.lazy(() => import('./pages/ActionsPage'));
+const ContactPage = React.lazy(() => import('./pages/ContactPage'));
+const DebatsPage = React.lazy(() => import('./pages/DebatsPage'));
+const RessourcesPage = React.lazy(() => import('./pages/RessourcesPage'));
+const CreateursPage = React.lazy(() => import('./pages/CreateursPage'));
+const AnnuaireAssociationsPage = React.lazy(() => import('./pages/AnnuaireAssociationsPage'));
+const CitoyenneteGuadeloupePage = React.lazy(() => import('./pages/CitoyenneteGuadeloupePage'));
+const CapsulesVideosPage = React.lazy(() => import('./pages/CapsulesVideosPage'));
+const Vote16AnsPage = React.lazy(() => import('./pages/Vote16AnsPage'));
+const EcologiePolitiquePage = React.lazy(() => import('./pages/EcologiePolitiquePage'));
+const LiberteExpressionPage = React.lazy(() => import('./pages/LiberteExpressionPage'));
+const MediaAdminPage = React.lazy(() => import('./pages/MediaAdminPage'));
 
 const App: React.FC = () => {
   return (
     <Router>
       <Layout>
+        <React.Suspense fallback={<div className="container py-16"><p>Chargement...</p></div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/a-propos" element={<AboutPage />} />
@@ -48,6 +50,7 @@ const App: React.FC = () => {
             </div>
           } />
         </Routes>
+        </React.Suspense>
       </Layout>
     </Router>
   );

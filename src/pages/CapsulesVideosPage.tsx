@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const CapsulesVideosPage: React.FC = () => {
   return (
     <div className="space-y-16">
+      <Seo title="Capsules vidéo" description="Capsules vidéo éducatives sur la citoyenneté guadeloupéenne – formats courts à partager." />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white py-20">
         <div className="container text-center">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const AnnuaireAssociationsPage: React.FC = () => {
   const [selectedDomaine, setSelectedDomaine] = useState('tous');
@@ -113,8 +114,12 @@ const AnnuaireAssociationsPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Annuaire des associations" 
+        description="Répertoire des associations citoyennes de Guadeloupe – environnement, éducation, solidarité et engagement local."
+      />
       {/* Section Hero */}
-      <section className="bg-gradient-to-r from-accent-600 to-primary-600 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="container text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             📋 Annuaire des Associations

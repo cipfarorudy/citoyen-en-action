@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const CreateursPage: React.FC = () => {
   const [selectedScript, setSelectedScript] = useState('capsule');
@@ -172,6 +173,10 @@ const CreateursPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Les créateurs" 
+        description="Rencontrez Rudy FARO et l'équipe de Citoyen en Action Guadeloupe – influenceurs citoyens, débatteurs TikTok et militants locaux."
+      />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-20">
         <div className="container text-center">

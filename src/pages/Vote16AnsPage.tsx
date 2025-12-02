@@ -2,10 +2,15 @@ import React from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import VideoEmbed from '../components/ui/VideoEmbed';
+import Seo from '../components/Seo';
 
 const Vote16AnsPage: React.FC = () => {
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Le vote à 16 ans" 
+        description="Pour ou contre le vote à 16 ans en Guadeloupe ? Analyse des arguments, enjeux et débat citoyen sur la participation électorale des jeunes."
+      />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white py-20">
         <div className="container text-center">

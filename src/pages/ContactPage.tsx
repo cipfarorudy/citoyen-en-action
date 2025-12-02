@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -69,8 +70,12 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Contact" 
+        description="Contactez Citoyen en Action Guadeloupe – rejoignez nos débats, actions citoyennes et engagement local via WhatsApp, réseaux sociaux ou email."
+      />
       {/* Section Hero */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-20">
         <div className="container text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Contactez-Nous

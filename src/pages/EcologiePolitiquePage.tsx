@@ -1,10 +1,15 @@
 import React from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const EcologiePolitiquePage: React.FC = () => {
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Écologie politique" 
+        description="Comment l'environnement devient une question politique majeure en Guadeloupe – récifs, biodiversité, énergies renouvelables et justice environnementale."
+      />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white py-20">
         <div className="container text-center">

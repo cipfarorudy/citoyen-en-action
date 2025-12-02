@@ -3,6 +3,7 @@ import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import ImageUpload from '../components/ui/ImageUpload';
 import VideoEmbed from '../components/ui/VideoEmbed';
+import Seo from '../components/Seo';
 
 interface MediaItem {
   id: string;
@@ -85,6 +86,10 @@ const MediaAdminPage: React.FC = () => {
 
   return (
     <div className="space-y-8">
+      <Seo 
+        title="Administration des médias" 
+        description="Gestion des images et vidéos pour le site Citoyen en Action Guadeloupe – administration du contenu multimédia."
+      />
       {/* Header */}
       <section className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white py-16">
         <div className="container text-center">

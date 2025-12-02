@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
 
 const CitoyenneteGuadeloupePage: React.FC = () => {
   const valeursCitoyennes = [
@@ -100,8 +101,11 @@ const CitoyenneteGuadeloupePage: React.FC = () => {
   ];
 
   return (
-
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-50 font-sans">
+      <Seo 
+        title="Citoyenneté en Guadeloupe" 
+        description="Qu'est-ce qu'être citoyen en Guadeloupe ? Identité créole, institutions locales, droits, devoirs et engagement citoyen dans l'archipel."
+      />
       {/* Hero Section Modernisée */}
       <section className="hero bg-gradient-to-br from-yellow-400 via-cyan-500 to-green-600 text-white py-24 relative overflow-hidden animate-fade-in shadow-2xl">
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-40 bg-repeat bg-[url('https://svgshare.com/i/14uA.svg')]"></div>

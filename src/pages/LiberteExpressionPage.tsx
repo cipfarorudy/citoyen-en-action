@@ -1,10 +1,15 @@
 import React from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const LiberteExpressionPage: React.FC = () => {
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Liberté d'expression" 
+        description="Où sont les limites de la liberté d'expression sur les réseaux sociaux ? Droits, responsabilités et censure en Guadeloupe."
+      />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-20">
         <div className="container text-center">

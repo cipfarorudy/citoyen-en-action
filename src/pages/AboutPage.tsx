@@ -1,6 +1,7 @@
 import React from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const AboutPage: React.FC = () => {
   const values = [
@@ -49,6 +50,7 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo title="À propos" description="Découvrez l'histoire, la mission et les valeurs de Citoyen en Action en Guadeloupe." />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-gray-100 to-gray-200 py-20">
         <div className="container text-center">

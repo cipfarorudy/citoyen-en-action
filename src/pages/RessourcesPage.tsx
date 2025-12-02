@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import MediaGallery from '../components/ui/MediaGallery';
+import Seo from '../components/Seo';
 
 const RessourcesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('tous');
@@ -192,8 +193,12 @@ const RessourcesPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo 
+        title="Ressources pédagogiques" 
+        description="Guides, fiches pratiques et outils pour l'engagement citoyen en Guadeloupe – tri sélectif, pétitions, actions locales et plus."
+      />
       {/* Section Hero */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-20">
+      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
         <div className="container text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             📚 Ressources Citoyennes

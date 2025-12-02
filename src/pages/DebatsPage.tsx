@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card, { CardContent } from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import Seo from '../components/Seo';
 
 const DebatsPage: React.FC = () => {
   const [selectedWeek, setSelectedWeek] = useState('S1');
@@ -197,6 +198,7 @@ const DebatsPage: React.FC = () => {
 
   return (
     <div className="space-y-16">
+      <Seo title="Débats citoyens" description="Programme des débats citoyens en Guadeloupe – formats, calendrier et participation." />
       {/* Section Hero */}
       <section className="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-20">
         <div className="container text-center">

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/ui/Button';
 import Card, { CardContent } from '../components/ui/Card';
 import logoReact from '../assets/logoCEA.png';
+import Seo from '../components/Seo';
 
 const actions = [
   {
@@ -40,10 +41,11 @@ const stats = [
 function HomePage() {
   return (
     <div className="space-y-16">
+      <Seo title="Accueil" description="Citoyen en Action Guadeloupe – débats, capsules vidéo et engagement local pour l'environnement, l'inclusion et la citoyenneté." />
       {/* Bannière moderne avec logo */}
       <div className="banner fade-in">
         <div className="banner-content flex items-center justify-center">
-          <img src={logoReact} alt="Logo Citoyen" width={70} height={70} style={{marginRight: '1rem', borderRadius: '12px', boxShadow: '0 4px 16px rgba(37,99,235,0.18)'}} />
+          <img src={logoReact} alt="Logo Citoyen" width={70} height={70} className="logo-image" />
           <span className="headline-shadow">Citoyen en Action - Guadeloupe 🌺</span>
         </div>
       </div>

@@ -103,9 +103,17 @@ a:hover,
 .accent:hover {
   color: #00b6e6;
 }
+/* Logo image styling */
+.logo-image {
+  margin-right: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
+}
+
 /* Effet glassmorphism pour la bannière */
 .banner {
   background: rgba(0, 216, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
   box-shadow: 0 4px 32px rgba(0, 216, 255, 0.12);
@@ -639,6 +647,7 @@ a:hover,
 .btn-glass {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 41, 55, 0.25);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #2563eb;
